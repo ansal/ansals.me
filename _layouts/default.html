@@ -1,56 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{page.title}}</title>
-        <meta name="viewport" content="width=device-width">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  {% include head.html %}
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  <body>
 
-    </head>
-    <body>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h2>{{ site.title }}</h2>
+        <p class="lead">{{ site.description }}</p>
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            </div>
+        <div class="colophon">
+          <ul class="colophon-links">
+            <li>
+              I'm <a href="https://github.com/ansal">ansal</a> on Github
+            </li>
+            <li>
+              I'm <a href="https://twitter.com/ansal_sa">@ansal_sa</a> on Twitter
+            </li>
+            <li>
+              I'm <a href="http://www.flickr.com/photos/marie-dancefloor/">marie-dancefloor</a> on Flickr
+            </li>
+            <li>
+              <a href="mailto:ansal141@gmail.com">Email me</a>
+            </li>
+          </ul>
+          <p>&copy; I don't care about Copyrights bro!</p>
+        </div>
+      </div>
+    </header>
 
-                {{ content }}
+    <div class="content container">
+      {{ content }}
+    </div>
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                   I'm <a href="https://github.com/ansal/">ansal</a> on Github.<br />
-                   I'm <a href="https://twitter.com/ansal_sa">@ansal_sa</a> on Twitter.<br />
-                   I'm <a href="http://www.flickr.com/photos/marie-dancefloor/">marie-dancefloor</a> on Flickr.<br />
-                </p>
-                <p>
-                  <a href="mailto:ansal141@gmail.com">Email me</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
-	
-	<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-45924535-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-	</script>
-
-    </body>
+  </body>
 </html>
