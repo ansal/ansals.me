@@ -1,0 +1,13 @@
+body {
+    background: #f6f5e6;
+}
+
+.box {
+    background: white;
+    border: 1px solid #BBB;
+    margin-top: 70px;
+}
+
+p {
+    margin-top: 20px;
+}

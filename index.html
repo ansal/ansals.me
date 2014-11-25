@@ -1,37 +1,66 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ansal's home page.</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        
+        <div class="row">
+            
+            <div class="col-md-offset-3 col-md-6 box">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+                <p class="pull-right">
+                    <a href="#">Blog</a> | 
+                    <a href="#">Projects</a>
+                </p>
+                
+                <h3>Hi there!</h3>
+                <hr>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+                <p>
+                    This is Ansal here and you are visiting my personal homepage. Thanks for stopping by.
+                </p>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+                <p>
+                    I occasionally write <a href="#">here</a>. I also have an <a href="#">old blog</a> about my Javascript learning adventures.
+                </p>
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="older">Older</a>
-  {% else %}
-    <span class="next">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a href="/" class="newer">Newer</a>
-    {% else %}
-      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="previous">Newer</span>
-  {% endif %}
-</div>
+                <p>
+                    I am a freelance web developer. Right now I am working on a Django + BackboneJS app named <a href="#">Room Manager</a>.
+                </p>
+
+                <p>
+                    I take some photos while I roam around. I upload them <a href="#">here</a> and <a href="#">here</a>.
+                </p>
+
+                <p>
+                    I started some <a href="#">projects</a> in my spare time. Most of them are free or even Open Source Software.
+                </p>
+
+                <p>
+                    You can reach me using <a href="#">email</a> or follow me at <a href="#">Twitter</a>.
+                </p>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <small>
+                             &copy; Ansal S.A, 2014 under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC 4.0 License</a>.
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
