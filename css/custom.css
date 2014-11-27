@@ -11,3 +11,13 @@ body {
 p {
     margin-top: 20px;
 }
+
+.project-shot {
+    width: 200px;
+    float: right;
+}
+
+.project-shot-mobile {
+    height: 120px;
+    float: right;
+}
