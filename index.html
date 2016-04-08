@@ -33,7 +33,7 @@
                 </p>
 
                 <p>
-                    I am a freelance web developer. Right now I am working on a Django + BackboneJS app named <a href="http://room-manager.bssatech.com">Room Manager</a>.
+                    I am a freelance web developer. Currently, I am working on a few Python based projects for clients and a JS based project, which is my hope for world domination!
                 </p>
 
                 <p>
@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-md-offset-3 col-md-6">
                         <small>
-                             &copy; Ansal S.A, 2014 under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC 4.0 License</a>.
+                             &copy; Ansal S.A, <span id="span-year"></span> under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC 4.0 License</a>.
                         </small>
                     </div>
                 </div>
@@ -78,6 +78,11 @@
       ga('create', 'UA-45924535-1', 'auto');
       ga('send', 'pageview');
 
+    </script>
+
+    <!-- Year -->
+    <script>
+        document.getElementById('span-year').innerHTML = new Date().getFullYear();
     </script>
 
 </body>
